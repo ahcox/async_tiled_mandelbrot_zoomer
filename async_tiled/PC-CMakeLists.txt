@@ -1,0 +1,15 @@
+#cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 2.8.12.2)
+project(async_tiled)
+
+# -Wextra is a bit OTT:
+# (https://gcc.gnu.org/onlinedocs/gcc-4.8.4/gcc/Warning-Options.html#Warning-Options)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1z -Wl,--no-as-needed -lpthread -Werror -Wall -Wextra")
+
+set(THIRDPARTY_DIR ${PROJECT_SOURCE_DIR}/thirdparty)
+
+# Global include directories for all targets:
+include_directories(${THIRDPARTY_DIR})
+
+set(SOURCE_FILES main.cpp)
+add_executable(async_tiled ${SOURCE_FILES})
