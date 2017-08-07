@@ -20,6 +20,9 @@ These were taken in the emulator but it runs on hardware too.
 
 ![Running on MacBook Pro Retina](docs/img/async_tiled_mandelbrot_mac_02.png)
 
+### Preview Video Running on iPad Pro 9.7 Hardware
+[![YouTube Video of Zoomer on iPad Pro 9.7](docs/img/async_tiled_mandelbrot_zoomer_youtube_preview.png)](https://youtu.be/4spmdNqdqu8)
+
 ## The Code
 Code of interest is found under the directories:
 
